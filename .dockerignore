@@ -1,0 +1,47 @@
+# Исключаем ненужные файлы из Docker контекста
+# Это ускоряет сборку и уменьшает размер отправляемого контекста
+
+# Зависимости (будут скачаны заново)
+vendor/
+
+# Скомпилированные бинарники
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+expense-tracker
+
+# Тестовые файлы и покрытие
+*.test
+*.out
+coverage.html
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Документация
+*.md
+docs/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Временные файлы
+tmp/
+*.log
+*.tmp

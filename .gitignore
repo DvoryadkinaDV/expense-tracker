@@ -1,0 +1,41 @@
+# Бинарники
+expense-tracker
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Тестовые файлы
+*.test
+*.out
+coverage.html
+coverage.out
+
+# Зависимости (go mod download скачает сам)
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS файлы
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Логи
+*.log
+
+# Временные файлы
+tmp/
+*.tmp
+
+# Переменные окружения (не коммитим секреты!)
+.env
+.env.local
+.env.*.local
